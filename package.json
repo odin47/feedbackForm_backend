@@ -1,0 +1,19 @@
+{
+  "name": "feeback360_backend",
+  "version": "1.0.0",
+  "description": "Used by the employees to give feedback on the events conducted in the orginization.",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon server.js"
+  },
+  "author": "Deepak Podili Devendra",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
