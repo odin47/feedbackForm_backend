@@ -91,8 +91,8 @@ module.exports = function (app, db) {
                 searchLDAP(userAlias, function (data) {
                     finalResult.userInfo = data.personFullName;
                     searchLDAPManager(userAlias, function (manAlias) {
-                        aliasManager = manAlias;
-                        searchLDAP(aliasManager, function (manFullName) {
+                        finalResult.aliasManager = manAlias;
+                        searchLDAP(finalResult.aliasManager, function (manFullName) {
                             finalResult.managerName = manFullName.personFullName;
                             res.send(finalResult);
                         });
